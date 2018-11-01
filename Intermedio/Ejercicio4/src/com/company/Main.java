@@ -7,21 +7,22 @@ public class Main
 
     static void DescomponFactoresPrimos(int n)
     {
-        int div = 2;
-        int i;
+        int factor = 2;
 
-        for(i = 0; i <= n; i++)
+        do
         {
-            if(n %div == 0)
+            if(n %factor == 0)
             {
-                System.out.print(div + "x");
-                n = n / div;
+                System.out.print(factor + "x");
+                n = n / factor;
             }
             else
             {
-                div++;
+                factor++;
             }
-        }
+
+        }while(factor <= n);
+
         System.out.print("\b");
     }
 
