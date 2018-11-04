@@ -9,7 +9,7 @@ public class Main
     {
         int factor = 2;
 
-        do
+        while(factor <= n)
         {
             if(n %factor == 0)
             {
@@ -20,9 +20,7 @@ public class Main
             {
                 factor++;
             }
-
-        }while(factor <= n);
-
+        }
         System.out.print("\b");
     }
 
